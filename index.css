@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+overflow-x: hidden;
+position: relative;
+font-size: 13px;
+}
+
+p{
+    margin: 0;
+}
+.page_title{
+    border-bottom:1px solid #932393 ;
+
+}
+.page_title h3{
+    color: #932393;
+}
+
+
+/* ..................................................... */
+
+.modal_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.modal {
+    position: fixed;
+    height: 100vh;
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+.modal .modal-dialog {
+    max-width: 1000px;
+}
+@media (max-width:991px){
+    .modal .modal-dialog {
+        max-width: 100%;
+    }
+}
+
+.modal-body{
+    flex-wrap: wrap;
+}
+@media (min-width: 767px){
+
+    .modal-body{
+        display: flex;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+
+    }
+}
+
+@media (max-width: 480px){
+    .modal-body .left_info{
+        flex: 100%;
+    }
+    .modal-body .right_info{
+        flex: 100%;
+    }
+}
+
+.addModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 50%; */
+    height: auto;
+    /* background:rgba(0,0,0,0.5) */
+    background:#fff;
+    z-index: 99999;
+}
+#addRowModal{
+    background: rgba(0,0,0,0.5)
+
+}
+#addRowModal .modal-dialog{
+    width: 300px;
+}
+
+
+
+.purchase_info,
+.order_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center; 
+}
+
+.border_around{
+    border:1px solid #932393 ;
+
+}
+.info_item{
+    margin: 5px;
+}
+.table{
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 480px){
+    .product_info {
+      
+        overflow-x: auto;
+    }
+  
+}
+.table .thead-dark th{
+    background-color: #932393;
+    border-color: transparent;
+    text-transform: capitalize;
+}
+.table tbody{
+    border:1px solid #932393 ;
+
+}
+.table thead th,
+.table td{
+text-align: center;
+vertical-align: middle;
+color:#666;
+}
+.table.total{
+    width: 50%;
+}
+button.btn{
+    background-color: #932393;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin:5px;
+        padding: 4px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+    .action_buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        }
+        .navbar-nav{
+            flex-direction: row;
+        }
+        .nav-item{
+            padding: 0 5px;
+            display: inline-block;
+        border-right: 3px solid #333;
+        
+        }
+        .nav-item:last-child{
+        border-right: 0px solid #333;
+        
+        }
+        .nav-link{
+            text-transform: capitalize;
+            color: #333;
+            position: relative;
+            padding: 0;
+        }
+        .nav-link.active{
+            color: red;
+        }
+        .mail_img{
+            transform: skewy(-6deg);
+        }
+        .success_msg h1{
+            letter-spacing: 2px;
+            font-size:30px;
+        }
+        @media (max-width:575px){
+            .success_msg h1{
+                font-size:20px;
+                letter-spacing: 0;
+            }
+            .success_msg h2{
+                font-size:25px;
+            }
+            img{
+                width: 100%;
+            }
+        }
